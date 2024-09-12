@@ -8,7 +8,7 @@
     "seed": "tsx --env-file .env src/db/seed.ts",
     "build": "tsc",
     "start": "npm run build && node dist/http/server.js",
-    "migrate:generate": "drizzle-kit generate:pg",
+    "migrate:generate": "drizzle-kit generate",
     "migrate:run": "drizzle-kit migrate"
   },
   "keywords": [],
