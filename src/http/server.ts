@@ -13,6 +13,8 @@ import fastifyCors from "@fastify/cors";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
+require("dotenv").config();
+
 app.register(fastifyCors, {
   origin: "*",
 });
