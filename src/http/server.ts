@@ -29,8 +29,11 @@ app.register(getWeekSummaryRoute);
 
 app
   .listen({
-    port: 3333,
+    port: Number(process.env.PORT) ?? 3000,
   })
   .then(() => {
-    console.log("Server is running on port 3333");
+    console.log(`Server is running on port ${process.env.PORT ?? 3000}`);
+  })
+  .catch((err) => {
+    console.error(err);
   });
