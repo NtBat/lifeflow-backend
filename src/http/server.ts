@@ -29,7 +29,7 @@ app.register(getWeekSummaryRoute);
 
 app
   .listen({
-    port: 3333,
+    port: 443,
   })
   .then(() => {
     console.log("Server is running on port 3333");
